@@ -30,10 +30,32 @@ git clone https://github.com/Hugofq23/PruebaTecnica.git/
 2. Ejecutar los sigueintes comandos desde la raiz /PruebaTecnica:
 
 - Instalar dependencias: composer install, npm install
-- Configurar el archivo .env: DB_DATABASE=prueba_clicko, DB_USERNAME=root, DB_PASSWORD= (En caso de no tener el archivo .env simplemente hay que ejecutar este comando `cp .env.example .env`)
+- Configurar el archivo .env: DB_CONNECTION=mysql, DB_DATABASE=prueba_clicko, DB_USERNAME=root, DB_PASSWORD= (En caso de no tener el archivo .env simplemente hay que ejecutar este comando `cp .env.example .env`)
 - Generar la clave de la aplicación: php artisan key:generate
 - Ejecutar las migraciones y el seeder: php artisan migrate:fresh --seed (Asi el seeder creara 20 usuarios en la BBDD)
-- Levantar el servidor: En un terminal php artisan serve y en otro terminal npm run dev
+- Podeis usar cualquiera de estos o usar el vuestro propio en /api/register (postman) /register (frontend):
+    - **CONTRASEÑA PARA USUARIOS**: password123
+    - jose@clicko.es
+    - ana@clicko.es
+    - marc@clicko.es
+    - luis@clicko.es
+    - sara@clicko.es
+    - juan@clicko.es
+    - laura@clicko.es
+    - david@clicko.es
+    - nuria@clicko.es
+    - carlos@clicko.es
+    - lucia@gmail.com
+    - mario@gmail.com
+    - elena@gmail.com
+    - miguel@gmail.com
+    - paula@gmail.com
+    - irene@outlook.es
+    - alberto@outlook.es
+    - ines@yahoo.com
+    - alba@yahoo.com
+    - hugo@clicko.es
+- Levantar el servidor: En un terminal ejecutar php artisan serve y en otro terminal ejecutar npm run dev (accedemos a http://127.0.0.1:8000 para visualizar el frontend)
 
 ## 📌 Rutas de la API para usar en POSTMAN
 
@@ -42,7 +64,7 @@ git clone https://github.com/Hugofq23/PruebaTecnica.git/
 | POST   | `/api/register` | Registrar usuario           | `name`, `email`, `password` |
 | POST   | `/api/login`    | Iniciar sesión              | `email`, `password`         |
 
-Al hacer login nos devolvera un token el cual tendremos que usar en la pestaña ***AUTHORIZATION*** y en ***AUTH TYPE*** seleccionamos la opcion ***BEARER TOKEN*** y en ***TOKEN*** añadimos el que nos a devuelto /api/login
+Al hacer login nos devolvera un token el cual tendremos que usar en la pestaña **AUTHORIZATION** y en **AUTH TYPE** seleccionamos la opcion **BEARER TOKEN** y en **TOKEN** añadimos el que nos a devuelto /api/login
 
 | Método | Ruta              | Descripción      | Autenticación | Datos requeridos            |
 | ------ | ----------------- | ---------------- | ------------- | --------------------------- |
