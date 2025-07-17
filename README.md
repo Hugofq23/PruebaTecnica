@@ -25,9 +25,9 @@ Permite:
 
 1. Clonar el repositorio:
 
-git clone [https://github.com/Hugofq23/PruebaTecnica.git/]
+git clone https://github.com/Hugofq23/PruebaTecnica.git/
 
-2. Ejecutar los sigueintes comandos desde la raiz /prueba-clicko:
+2. Ejecutar los sigueintes comandos desde la raiz /PruebaTecnica:
 
 - Instalar dependencias: composer install, npm install
 - Configurar el archivo .env: DB_DATABASE=prueba_clicko, DB_USERNAME=root, DB_PASSWORD= (En caso de no tener el archivo .env simplemente hay que ejecutar este comando `cp .env.example .env`)
